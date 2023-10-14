@@ -25,18 +25,20 @@ lengthEl.addEventListener("change", (e) => {
     //check if integer value is an integer
         
 
-    if (!Number.isInteger(e.target.value)) {
+    if (!Number.isInteger(parseInt((e.target.value)))) {
         e.target.value = 8
         return
     } 
 
     // coerce to reasonable length values
     const length = parseInt(e.target.value);
-    if (length < 1) {
-        e.target.value = 1;
-    } else if (length > 12) {
-        e.target.value = 12;
-    } 
+    if (length < 6) {
+        e.target.value = 6;
+    } else if (length > 20) {
+        e.target.value = 20;
+    } else {
+        e.target.value = length;
+    }
 });
 
 //get content of lengthEl as integer
