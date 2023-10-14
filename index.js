@@ -55,7 +55,6 @@ function generatePassword(len) {
 }
 
 generateBtn.addEventListener("click", function() {
-    console.log("I was clicked!")
     for (const el of passwordEls) {
         el.textContent = generatePassword(parseInt(lengthEl.value));
     }

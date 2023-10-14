@@ -107,4 +107,8 @@ button {
 
 }
 
+#generate-btn:hover {
+    cursor: pointer;
+}
+
 
