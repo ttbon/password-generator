@@ -1,0 +1,57 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div id="top-info">
+            <h1>Generate a <br/> <span class="text-green">random password</span></h1>
+            <h2>Never use an insecure password again.</h2>
+        </div>
+
+        <div>
+            <!-- checkbox input -->
+            <div class="setting">
+                <input type="checkbox" id="numbers" checked>
+                <label for="numbers">Numbers</label>
+            </div>
+            <div class="setting">
+                <input type="checkbox" id="symbols" checked>
+                <label for="symbols">Symbols</label>
+            </div>
+
+            <div class="setting">
+                <input 
+                    id="pass-length-input" 
+                    type="text" 
+                    class="quantity__input" 
+                    value="8">
+                <span>Password Length</span>
+            </div>
+
+
+            <button id="generate-btn">Generate passwords</button>
+        </div>
+        <hr/>
+        <div class="results-container">
+            <button class="result">
+                <span id="password1">test</span>
+                <img 
+                    src="copy.svg" 
+                    alt="copy" 
+                    class="copy-icon"
+                    onclick="copyToClipboard(passwordEls[0])"
+                >
+            </button>
+            <button class="result">
+                <span id="password2">test</span>
+                <img 
+                    src="copy.svg" 
+                    alt="copy" 
+                    class="copy-icon"
+                    onclick="copyToClipboard(passwordEls[1])"
+                >
+            </button>         
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>

@@ -1,0 +1,110 @@
+:root{
+    --green: #10B981;
+    --navy: #273549;
+    --night: #2B283A;
+    --light-green: #ECFDF5;
+    --gray: #6B7280;
+
+    --space-xl: 50px;
+    --space-lg: 24px;
+    --space-md: 12px;
+    --space-sm: 4px;
+    --space-xs: 2px;
+
+
+    --size-lg: 40px;
+    --size-md: 20px;
+}
+
+body {
+    margin: 100px var(--space-xl);
+    max-width: 550px;
+    color: var(--night);
+    background-color: var(--light-green);
+    font-family: 'Inter', sans-serif;
+    
+}
+
+h1 {
+    font-size: var(--size-lg);
+    margin-bottom: var(--space-md);
+    font-family: 'Karla', sans-serif;
+    line-height: 40px;
+    
+}
+
+h1 span {
+    color: var(--green);
+}
+
+h2 {
+    color: var(--gray);
+    margin: 0;
+    font-size: var(--size-md);
+    font-weight: 400;
+}
+
+#top-info {
+    margin-bottom: var(--space-xl);
+}
+
+.setting {
+    align-items: center;
+    margin-top: var(--space-sm);
+}
+
+.quantity__input {
+    width: 32px;
+    margin-right: 10px;
+    padding: 0;
+    text-align: center;
+    border-top: 2px solid #dee0ee;
+    border-bottom: 2px solid #dee0ee;
+    border-left: 1px solid #dee0ee;
+    border-right: 2px solid #dee0ee;
+    background: #fff;
+    color: #8184a1;
+}
+
+button {
+    padding: var(--space-md);
+    border: none;
+    border-radius: var(--space-md);
+    margin: var(--space-lg) 0;
+}
+
+#generate-btn {
+    background-color: var(--green);
+    color: white;
+    display: block;
+}
+
+.results-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.result {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--navy);
+    width: 250px;
+    color: var(--green);
+}
+
+/* copy-icon class on hover change mouse to hand */
+.copy-icon:hover {
+    cursor: pointer;
+}
+
+.result {
+    position: relative;
+}
+
+.bubble-dialog {
+    position: absolute;
+    top: 50px;
+
+}
+
+
